@@ -1,0 +1,10 @@
+{#preview //все изображения#}
+{% for item in data %}
+    <div class="preview">
+        <a href="?id = {{ item.id }}">
+            <img src="/imges/{{ item.file }}">
+            <div> {{ item.title }}</div>
+        </a>
+    </div>
+{% endfor %}
+
