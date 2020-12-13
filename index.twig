@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images gallery</title>
+    <meta charset="utf-8">
+    <style>
+        .preview {
+            float: left;
+        }
+        .preview img {
+            max-width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+{% if mode == 'one' %}
+{% include 'one.twig' %}
+{% else %}
+{% include 'preview.twig' %}
+{% endif %}
+</body>
+</html>
